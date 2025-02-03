@@ -1,202 +1,39 @@
 import { createSlice } from "@reduxjs/toolkit"
+// import Burger from '../../assets/products/burger.png'
 
 const initialState = {
     products: [
-        {
-            name: 'Bag',
-            description: 'A bag is a flexible container that can be closed ',
-            price: 629,
-            category: 'bag',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Formal Shirt',
-            description: 'A shirt is a cloth garment for the upper body',
-            price: 544,
-            category: 'style',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Water Bottle',
-            description: 'A bag is a flexible container that can be closed ',
-            price: 37,
-            category: 'bag',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Poco M2',
-            description: 'A shirt is a cloth garment for the upper body',
-            price: 11999,
-            category: 'phones',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'POCO J7 Max',
-            description: 'The POCO M2 Pro boasts a 5000-mAh battery',
-            price: 14999,
-            category: 'phone',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Trolly',
-            description: 'A bag is a flexible container that can be closed ',
-            price: 2100,
-            category: 'style',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Bag',
-            description: 'A bag is a flexible container that can be closed ',
-            price: 299,
-            category: 'style',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Formal Shirt',
-            description: 'A shirt is a cloth garment for the upper body',
-            price: 219,
-            category: 'style',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Water Bottle',
-            description: 'A bag is a flexible container that can be closed ',
-            price: 199,
-            category: 'style',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Poco M2',
-            description: 'A shirt is a cloth garment for the upper body',
-            price: 11999,
-            category: 'phone',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'POCO J7 Max',
-            description: 'The POCO M2 Pro boasts a 5000-mAh battery',
-            price: 14599,
-            category: 'phone',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Trolly',
-            description: 'A bag is a flexible container that can be closed ',
-            price: 2100,
-            category: 'style',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Bag',
-            description: 'A bag is a flexible container that can be closed ',
-            price: 422,
-            category: 'style',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Formal Shirt',
-            description: 'A shirt is a cloth garment for the upper body',
-            price: 329,
-            category: 'style',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Water Bottle',
-            description: 'A bag is a flexible container that can be closed ',
-            price: 322,
-            category: 'style',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Poco M2',
-            description: 'A shirt is a cloth garment for the upper body',
-            price: 7872,
-            category: 'phones',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'POCO J7 Max',
-            description: 'The POCO M2 Pro boasts a 5000-mAh battery',
-            price: 14199,
-            category: 'phone',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Trolly',
-            description: 'A bag is a flexible container that can be closed ',
-            price: 3100,
-            category: 'style',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Bag',
-            description: 'A bag is a flexible container that can be closed ',
-            price: 492,
-            category: 'style',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Formal Shirt',
-            description: 'A shirt is a cloth garment for the upper body',
-            price: 499,
-            category: 'style',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Water Bottle',
-            description: 'A bag is a flexible container that can be closed ',
-            price: 219,
-            category: 'style',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Poco M2',
-            description: 'A shirt is a cloth garment for the upper body',
-            price: 4199,
-            category: 'phone',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'POCO J7 Max',
-            description: 'The POCO M2 Pro boasts a 5000-mAh battery',
-            price: 8722,
-            category: 'phone',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-        {
-            name: 'Trolly',
-            description: 'A bag is a flexible container that can be closed ',
-            price: 2891,
-            category: 'style',
-            createAt: '12/01/2024',
-            updatedAt: '22/02/2024'
-        },
-    ],
+            {name: 'Burger', price: 67, category: 'burger'},
+            {name: 'Pasta', price: 49, category: 'pasta'},
+            {name: 'Chips', price: 14, category: 'chips'},
+            {name: 'Burger', price: 89, category: 'burger'},
+            {name: 'Pasta', price: 64, category: 'pasta'},
+            {name: 'Chips', price: 33, category: 'chips'},
+            {name: 'Burger', price: 65, category: 'burger'},
+            {name: 'Pasta', price: 34, category: 'pasta'},
+            {name: 'Chips', price: 83, category: 'chips'},
+            {name: 'Burger', price: 22, category: 'burger'},
+            {name: 'Pasta', price: 63, category: 'pasta'},
+            {name: 'Chips', price: 34, category: 'chips'},
+            {name: 'Burger', price: 54, category: 'burger'},
+            {name: 'Pasta', price: 44, category: 'pasta'},
+            {name: 'Chips', price: 23, category: 'chips'},
+            {name: 'Burger', price: 67, category: 'burger'},
+            {name: 'Pasta', price: 30, category: 'pasta'},
+            {name: 'Chips', price: 88, category: 'chips'},
+            {name: 'Burger', price: 77, category: 'burger'},
+            {name: 'Pasta', price: 66, category: 'pasta'},
+            {name: 'Chips', price: 23, category: 'chips'},
+        ],
+    category: [
+            {id: 1, name: 'Chips', value: 'chips'},
+            {id: 2, name: 'Burger', value: 'burger'},
+            {id: 3, name: 'Pasta', value: 'pasta'},
+        ],
+        cart: [],
     countList: 24,
-    isReFresh: false
+    isReFresh: false,
+    selectedCategory: ''
 
 }
 
@@ -207,19 +44,31 @@ export const homeSlice = createSlice({
         setProductsList: (state, action) => {
             state.products = action.payload
         },
+        setCategoryList: (state, action) => {
+            state.category = action.payload
+        },
+        setSelectedCategory: (state, action) => {
+            state.selectedCategory = action.payload
+        },
         setTotalEntry: (state, action) => {
             state.countList = action.payload
         },
         setReFresh: (state, action) => {
             state.isReFresh = action.payload
         },
+        setCart: (state, action) => {
+            state.cart = action.payload
+        },
     }
 })
 
-export const { setProductsList, setTotalEntry, setReFresh } = homeSlice.actions
+export const { setProductsList, setTotalEntry, setReFresh, setCategoryList, setSelectedCategory, setCart } = homeSlice.actions
 
 export const selectProductList = (state) => state.products.products
 export const selectTotalEntry = (state) => state.products.countList
 export const selectReFresh = (state) => state.products.isReFresh
+export const selectCategoryList = (state) => state.products.category
+export const selectCategory = (state) => state.products.selectedCategory
+export const selectCart = (state) => state.products.cart
 
 export default homeSlice.reducer

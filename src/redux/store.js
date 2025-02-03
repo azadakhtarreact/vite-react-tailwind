@@ -6,7 +6,7 @@ import guestHomeSliceReducer from "./slices/guestHomeSlice";
 const store = configureStore({
     reducer: {
         user: userReducer,
-        guestHome: guestHomeSliceReducer
+        products: guestHomeSliceReducer
     }
 });
 export { store }
