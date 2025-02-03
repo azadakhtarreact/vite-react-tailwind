@@ -1,0 +1,67 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+@import 'flatpickr/dist/flatpickr.css';
+
+
+body{ 
+    background-color:#f9fafa;
+    font-family: "Manrope", serif;
+    font-optical-sizing: auto;
+    font-style: normal; 
+    /* -webkit-font-smoothing: antialiased; 
+    font-smoothing: antialiased; 
+    font-size:13px; 
+    line-height:22px; 
+    letter-spacing: 0.01em  */
+  }
+
+a { text-decoration: none; color:#4e4e4e; cursor: pointer !important; outline: 0; }
+a:hover, a:focus{ text-decoration: none;}
+a:focus {outline: none; }
+img { max-width:100%; height:auto; -webkit-backface-visibility: hidden; }
+p {margin:0 0 22px 0}
+.table-inputs input {
+  background-color: #f4f5f6;
+}
+input:focus, label:focus, label:focus-within {
+  outline: rgb(219, 219, 219) !important; 
+}
+
+input:focus-visible {
+    /* outline: 1px solid rgb(219, 219, 219) !important;  */
+    outline: rgb(219, 219, 219) !important; 
+  }
+/* input, input:active, input:hover, input:focus-visible {
+    border: 1px solid rgb(219, 219, 219) !important; 
+} */
+
+.search {
+  background-color: #f4f5f6;
+}
+.btn, .btn-outline{
+  outline: #f4f5f6 !important;
+}
+.hr{
+  height: 1px;
+  background: #101010;
+}
+
+  /* .rdt_TableCol {
+    border: 1px solid #000;
+  } */
+
+/* rdt_Table
+rdt_TableRow
+rdt_TableCol
+rdt_TableCol_Sortable
+rdt_TableCell
+rdt_TableHeader
+rdt_TableFooter
+rdt_TableHead
+rdt_TableHeadRow
+rdt_TableBody
+rdt_ExpanderRow */

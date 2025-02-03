@@ -1,0 +1,47 @@
+/* / SMARTPHONES PORTRAIT / */
+@media only screen and (max-width: 320px) {
+
+}
+
+/* / SMARTPHONES LANDSCAPE / */
+@media only screen and (max-width: 480px) {
+
+}
+@media only screen and (max-width: 539px) {
+
+}
+
+/* / SMARTPHONES LANDSCAPE / */
+@media only screen and (max-width: 680px) {
+
+}
+
+/* / TABLETS PORTRAIT / */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* / TABLET LANDSCAPE / DESKTOP / */
+@media only screen and (max-width: 991px) {
+    #tablet{
+      display: block;
+    }
+    #desktop{
+        display: none;
+    }
+
+}
+
+
+/* / TABLET LANDSCAPE / DESKTOP / */
+@media only screen and (max-width: 1024px) {
+
+}
+/* / LARGE SCREEN / DESKTOP / */
+@media (min-width: 1920px) and (max-width: 2560px)  {
+
+}
+/* / EXTRA LARGE SCREEN / DESKTOP / */
+@media (min-width: 2561px) and (max-width: 4000px)  {
+
+}
