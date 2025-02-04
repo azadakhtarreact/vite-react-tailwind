@@ -39,16 +39,6 @@ input:focus-visible {
     border: 1px solid rgb(219, 219, 219) !important; 
 } */
 
-.search {
-  background-color: #f4f5f6;
-}
-.btn, .btn-outline{
-  outline: #f4f5f6 !important;
-}
-.hr{
-  height: 1px;
-  background: #101010;
-}
 
   /* .rdt_TableCol {
     border: 1px solid #000;
@@ -65,3 +55,26 @@ rdt_TableHead
 rdt_TableHeadRow
 rdt_TableBody
 rdt_ExpanderRow */
+
+.category-list {
+  border: 1px solid #afb5b3;
+}
+.myProduct {
+  border: 1px solid #d0cbcb;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cart-detail{
+  border: 1px solid #d0cbcb;
+}
+.cart-detail .hr{
+  border: 1px solid #d0cbcb;
+  width: 100%;
+}
+.cart-detail .item {
+  border-bottom: 1px solid #d0cbcb;
+}
+.total{
+  font-weight: 800;
+}
