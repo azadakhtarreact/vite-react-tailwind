@@ -20,10 +20,9 @@ const HomePage = () => {
     //   const isFresh = useSelector()
 
 
-
     const filterProduct = () => {
         if (myCategory) {
-            console.log('myCategory', products, myCategory)
+            // console.log('myCategory', products, myCategory)
             const filterData = products.filter((item) => item?.category == myCategory)
             console.log('filterData', filterData)
             dispatch(setProductsList(filterData))
